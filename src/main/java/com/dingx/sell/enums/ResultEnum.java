@@ -41,7 +41,7 @@ public enum ResultEnum {
 
     PRODUCT_STATUS_ERROR(24, "product status wrong"),
 
-    LOGIN_FAIL(25, "loggin failed, info wrong"),
+    LOGIN_FAIL(25, "login failed, info wrong"),
 
     LOGOUT_SUCCESS(26, "logout success"),
     ;
