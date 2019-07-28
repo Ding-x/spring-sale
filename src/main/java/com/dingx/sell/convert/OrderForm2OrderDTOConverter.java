@@ -30,6 +30,8 @@ public class OrderForm2OrderDTOConverter {
         } catch (Exception e) {
             throw new SellException(ResultEnum.PARAM_ERROR);
         }
+
+
         orderDTO.setOrderDetailList(orderDetailList);
 
         return orderDTO;

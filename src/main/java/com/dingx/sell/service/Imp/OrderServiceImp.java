@@ -67,13 +67,12 @@ public class OrderServiceImp implements OrderService {
         }
 
         OrderMaster orderMaster = new OrderMaster();
+        orderDTO.setOrderId(orderId);
         BeanUtils.copyProperties(orderDTO,orderMaster);
         orderMaster.setOrderId(orderId);
         orderMaster.setOrderAmount(orderAmount);
         orderMaster.setOrderStatus(OrderStatusEnum.NEW.getCode());
         orderMaster.setPayStatus(PayStatusEnum.WAIT.getCode());
-        System.out.println("------------"+orderMaster);
-
 
         orderMasterRepository.save(orderMaster);
 
